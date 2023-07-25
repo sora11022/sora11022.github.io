@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #A06D21;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://cdn.kimkim.com/files/a/images/ddc51937c708639a3eeee97adfcaa95c3905295d/big-b15529de1f273369efd237d62db32f3e.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    color: #FFCC00;
+}
+p{
+    color: #ffffff;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}

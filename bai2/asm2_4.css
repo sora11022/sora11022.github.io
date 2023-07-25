@@ -1,0 +1,17 @@
+h1 {
+    color: green;
+    text-align: center;
+}
+.formula{
+    color: #FF0000;
+}
+.center{
+    background-color: #CCCCCC;
+    display: flex;
+    justify-content: center;
+}
+
+dd, dt{
+    color: #0000CC;
+    padding: 13px;
+}
