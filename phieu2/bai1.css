@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    border-bottom: 3px solid black;
+    width: 98%;
+    margin: 0 auto;
+    background-color: rgb(238, 150, 91);
+    position: relative;
+    
+}
+.head h3{
+    height: fit-content;
+    margin: 0;
+}
+.board{
+    width: 98%;
+    margin-top: 20px;
+    margin: 10px  auto;
+}
+table{
+    border: 1px solid rgb(197, 58, 8);
+    border-spacing: 0px;
+}
+table tr th{
+    background-color: rgb(247, 128, 59);
+    border: 1px solid rgb(197, 58, 8);
+    color: white;
+}
+table tr td{
+    border: 1px solid rgb(197, 58, 8);
+}
