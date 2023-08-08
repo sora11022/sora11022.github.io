@@ -1,6 +1,7 @@
-let n = 3
 
-for(i = 1; i <= 10; i++){
-    const result = i * n;
-    console.log(`${n} * ${i} = ${result}`);
+for(i = 1; i < 10; i++){
+    console.log(`Bang nhan ${i}`);
+    for(j = 1; j <= 10; j++){
+    console.log(`${i} * ${j} = ${i*j}`)
+}
 }

@@ -12,3 +12,8 @@ function reverseNum(num){
     );
 }
 console.log(reversedNum(123456)) 
+
+function reverseNum(n){
+    return Number(n.toString().split('').reverse().join(''))
+}
+console.log(reverseNum(123678))
