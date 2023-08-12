@@ -16,7 +16,7 @@ let nguoiGia = 0
 for(let i = 0; i<listPersons.length; i++){
     if(listPersons[i].age >= 30){
         nguoiGia++
-    } else if(listPersons[i].age <= 30 && listPersons[i].age >= 18){
+    } else if(listPersons[i].age >= 18){
         thanhNien++
     } else {
         treCon++
