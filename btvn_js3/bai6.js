@@ -13,3 +13,11 @@ function wordCount(str){
 }
 
 console.log(wordCount("This is a sentence."))
+//cach 1
+
+
+
+let strs = "This is a sentence."
+let wordsCount = strs.split(" ").length;
+console.log(wordsCount)
+//cach 2
