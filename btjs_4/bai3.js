@@ -1,4 +1,5 @@
-const arr = [];
+const arr = new Array(100)
+arr.fill(0)
 for (i = 0; i < 100; i++){
    arr[i] = i
 }
