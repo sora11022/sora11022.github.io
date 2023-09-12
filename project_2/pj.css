@@ -241,7 +241,4 @@ hr{
   .menu{
     animation: enter-animation 0.8s 1;
   }
-  .movie, .bottom{
-    animation: enter-animation 1.5s 1;
-  }
 }
