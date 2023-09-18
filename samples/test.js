@@ -4,17 +4,15 @@ function uniqueStr(str){
 
     for (let i = 0; i < str.length; i++){
         const char = str[i];
-    // kiem tra xem neu ky tu bi lap thi reset luon str
-        if (curStr.includes(char)){
-            curStr = "";
+    // lấy các ký tự của char nếu trong chuỗi curStr k bị trùng
+        if (!curStr.includes(char)){
+            curStr += char;
         }
-
-        curStr += char;
-
+    // gán chuỗi curStr vào longestStr nếu ký tự của curStr > longestStr
         if (longestStr.length < curStr.length){
             longestStr = curStr;
         }
     }
     return longestStr;
 }
-console.log(uniqueStr('aaabdcdghd'));
+console.log(uniqueStr('bcdcdefgdmn'));
