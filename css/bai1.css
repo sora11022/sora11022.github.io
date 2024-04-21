@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.boxer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxer div{
+    background-color: yellow;
+    width: 10%;
+    height: 17vh;
+}
+.boxer div:first-child{
+    margin-right: auto;
+}
+.boxer div:last-child{
+    margin-left: auto;
+}
+.boxer div:nth-child(2){
+    margin-right: 5px;
+}
