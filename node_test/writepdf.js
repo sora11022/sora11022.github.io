@@ -11,7 +11,7 @@ async function writepdf(imagePath) {
   const page0 = pdfDoc.getPages()[0];
 
   page0.drawText('Tuong Dang', {
-    x: 150,
+    x: 100,
     y: 555,
     size: 12,
     color: rgb(0, 0, 0),
