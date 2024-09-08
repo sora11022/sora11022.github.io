@@ -8,6 +8,7 @@ const typeRole = require('../constants/type.role');
 
 const {
   getUser,
+  getUserById,
   deleteUser,
   updateUserInfo,
 } = require('../controllers/user.controller');
@@ -30,6 +31,7 @@ router
     asyncMiddleware(authMiddleware),
     rolesMiddleware(typeRole.ADMIN),
     asyncMiddleware(updateUserInfo),
-  );
+  )
+  .get(asyncMiddleware(getUserById));
 
 module.exports = router;

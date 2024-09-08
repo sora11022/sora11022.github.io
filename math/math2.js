@@ -25,21 +25,21 @@ console.log(divB(3).toFixed(2));
 function divC(n){
     let res = 0;
     for(let i = 0; i <= n; i++){
-        res += ((2*i) + 1)/((2*i + 2))
+        res += (2*i + 1)/(2*i + 2)
     }
     return res;
 }
 console.log(divC(2));
 
 // 9)Tính T(n) = 1*2*3*.....*n
-function mulA(n){
+function bai9(n){
     let res = 1;
     for(let i = 1; i<=n; i++){
         res *= i
     }
     return res;
 }
-console.log(mulA(4));
+console.log(bai9(4));
 
 // 10)Tính T(x,n) = x^n
 

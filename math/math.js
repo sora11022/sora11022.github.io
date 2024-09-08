@@ -24,33 +24,29 @@ function div(x){
     for(let i = 1; i<= x; i++){
         kq += 1/i
     }
-    return  kq.toFixed(2)
+    return  kq.toFixed(3)
 }
-console.log(div(3));
+console.log(div(4));
 
 // S(n) = 1/2 + 1/4 + ... + 1/2n
 function divN(x){
     let res = 0;
-    for(let i = 2; i <= x; i++){
-        if(i % 2 == 0){
-            res += 1/i
-        }
+    for(let i = 1; i <= x; i++){
+            res += 1/(2*i)
     }
     return res
 }
 
-console.log(divN(6));
+console.log(divN(3));
 
 // S(n) = 1 + 1/3 + 1/5 + ... + 1/(2n+1)
 
 function divM(x){
     let res = 1;
-    for(let i = 2; i <= x; i++){
-        if(i % 2 != 0){
-            res += 1/i
-        }
+    for(let i = 1; i <= x; i++){
+        res += 1/(2*i + 1)
     }
     return res
 }
 
-console.log(divM(5));
+console.log(divM(4));

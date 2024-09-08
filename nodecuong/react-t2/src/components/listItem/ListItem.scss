@@ -1,0 +1,54 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_todo{
+        background-color: white;
+        width: 45%;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+
+        &__icon{
+            align-items: center;
+            border: 2px solid #6ddebb;
+            border-radius: 50%;
+            color: #6ddebb;
+            cursor: pointer;
+            display: flex;
+            font-size: 30px;
+            height: 50px;
+            justify-content: center;
+            margin-right: 30px;
+            padding: 10px;
+            width: 50px;
+
+            i{
+                display: none;
+            }
+        }
+
+        &_plan{
+            font-size: 30px;
+            font-weight: 300;
+        }
+        &__change{
+            display: flex;
+            font-size: 32px;
+            opacity: 0.5;
+            cursor: pointer;;
+        }
+    }
+
+    .status {
+        align-items: center;
+        .item_todo__icon{
+            i {
+                display: block;
+            }
+        }
+        
+    }
+}

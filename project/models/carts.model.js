@@ -7,10 +7,22 @@ const cartSchema = mongoose.Schema(
       ref: 'user',
     },
     isOrdered: {
-      type: Number,
-      enum: [0, 1],
-      default: 0,
+      type: Boolean,
+      default: false,
     },
+    items: [
+      {
+        productId: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: 'product',
+          required: true,
+        },
+        quantity: {
+          type: Number,
+          required: true,
+        },
+      },
+    ],
   },
   {
     versionKey: false,

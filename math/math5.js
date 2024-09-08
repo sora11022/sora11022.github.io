@@ -8,6 +8,7 @@ function mathA(n){
 }
 console.log(mathA(10).toFixed(3));
 
+
 // 22)S(n) = 1/(1 + 1/(1 + 1/(1 + 1/(... 1 /(1/(1 + 1/(1 + 1 )))))))
 function mathB(n){
     let S = 0;
@@ -18,6 +19,12 @@ function mathB(n){
 }
 console.log(mathB(5));
 
+function bai22(n){
+    if(n === 0) return 0.5;
+    return 1/(1+bai22(n-1));
+}
+console.log(bai22(5));
+
 // 23)Hãy đếm số lượng chữ số của số nguyên dương n
 function countA(n){
     let str = n.toString();
@@ -26,6 +33,17 @@ function countA(n){
 }
 console.log(countA(1500));
 
+function bai23(n){
+    let counter = 0;
+    let num = 0;
+    while (n != 0) {
+        num = n % 10;
+        counter++;
+        n = Math.floor(n/10)
+    }
+    return counter
+}
+console.log('bai 23: ' + bai23(1500));
 // 24)Hãy tính tổng các chữ số của số nguyên dương n
 function sumA(n){
     let S = 0;

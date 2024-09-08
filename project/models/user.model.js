@@ -48,7 +48,7 @@ const userSchema = mongoose.Schema(
 );
 
 // xoa password khi tra ve json
-userSchema.set('toJson', {
+userSchema.set('toJSON', {
   transform: function (doc, ret, options) {
     delete ret.password;
   },
@@ -62,7 +62,7 @@ userSchema.pre('save', function (next) {
   next();
 });
 
-userSchema.pre('findByIdAndUpadte', function (next) {
+userSchema.pre('findByIdAndUpdate', function (next) {
   const user = this.getUpdate();
   if (user.password) {
     user.password = bcryptjs.hashSync(user.password, 10);
@@ -77,6 +77,7 @@ userSchema.pre('findOneAndUpdate', function (next) {
     user.password = bcryptjs.hashSync(user.password, 10);
   }
   this.setUpdate(user);
+  next();
 });
 
 module.exports = mongoose.model('user', userSchema);

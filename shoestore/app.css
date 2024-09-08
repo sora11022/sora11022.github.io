@@ -1,9 +1,8 @@
-* {
+body, * {
     margin: 0;
     padding: 0;
 }
 body{
-    overflow-x: hidden;
     font-family: "Kanit";
 }
 .header {
@@ -12,7 +11,7 @@ body{
     width: 100%;
 }
 .top {
-    padding: 16px 20px;
+    padding: 16px 0;
     width: 100%;
     margin: auto;
     text-align: right;
@@ -25,6 +24,7 @@ body{
 }
 .acc p{
     padding: 0 1rem;
+    cursor: pointer;
 }
 .acc p:hover {
     transition: 0.5s;
@@ -85,6 +85,7 @@ body{
     list-style-type: none;
 }
 .cart ul li:hover {
+    cursor: pointer;
     transition: 0.5s;
     color: #c89979;
 }
@@ -280,7 +281,9 @@ ul li:hover .sub-menu{
     text-decoration: line-through;
     margin-left: 10px;
 }
-
+.tail-con{
+    width: 100%;
+}
 .tail{
     display: flex;
     width: 65%;
@@ -329,6 +332,9 @@ ul li:hover .sub-menu{
 .news .news-img img:hover{
     transform: scale(0.98);
     border-radius: 0;
+}
+.contact-con{
+    width: 100%;
 }
 .contact{
     width: 80%;

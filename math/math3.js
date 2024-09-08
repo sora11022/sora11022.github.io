@@ -25,9 +25,7 @@ console.log(baiB(2,3));
 function baiC(x,n){
     let S = 0;
     for(let i = 1; i<= n; i++){
-        if(i % 2 == 0 ){
-            S += Math.pow(x,i)
-        }
+        S += Math.pow(x,2*i)
     }
     return S;
 }
@@ -36,10 +34,8 @@ console.log(baiC(2,3));
 // 14)Tính S(x,n) = x + x^3 + x^5 +....+ x^(2n+1)
 function baiD(x,n){
     let S = 0;
-    for(let i = 1; i<= n; i++){
-        if(i % 2 != 0 ){
-            S += Math.pow(x,i)
-        }
+    for(let i = 0; i<= n; i++){
+        S += Math.pow(x,2*i+1)
     }
     return S;
 }
