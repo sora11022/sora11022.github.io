@@ -1,10 +1,11 @@
-import React from 'react'
-import Counter from '../components/Counter/Counter'
+import React from 'react';
+import Counter from '../components/Counter/Counter';
 
 const Faq = () => {
-  return (
-    <Counter/>
-  )
-}
+  useEffect(() => {
+    document.title = 'Faq';
+  }, []);
+  return <Counter />;
+};
 
-export default Faq
+export default Faq;

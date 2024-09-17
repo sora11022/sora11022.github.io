@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import '../styles/home.scss';
 import Post from '../components/Post';
 import { PostContext } from '../context/PostContext';
@@ -18,6 +18,7 @@ const Home = () => {
             id={item.id}
             author={item.author}
             download_url={item.download_url}
+            pos={index}
           />
         ))}
       </div>
